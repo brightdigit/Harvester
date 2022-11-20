@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "032-player.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

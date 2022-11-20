@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3BBD896292ACC02001E3F7F /* HVButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBD895292ACC02001E3F7F /* HVButton.swift */; };
+		B3BBD898292ACE45001E3F7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBD897292ACE45001E3F7F /* ContentView.swift */; };
 		B3C58383290AF22700842069 /* HarvesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C58382290AF22700842069 /* HarvesterApp.swift */; };
-		B3C58385290AF22700842069 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C58384290AF22700842069 /* ContentView.swift */; };
+		B3C58385290AF22700842069 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C58384290AF22700842069 /* DemoView.swift */; };
 		B3C58387290AF22800842069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C58386290AF22800842069 /* Assets.xcassets */; };
 		B3C5838A290AF22800842069 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C58389290AF22800842069 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3BBD895292ACC02001E3F7F /* HVButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVButton.swift; sourceTree = "<group>"; };
+		B3BBD897292ACE45001E3F7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3C5837F290AF22700842069 /* Harvester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harvester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C58382290AF22700842069 /* HarvesterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvesterApp.swift; sourceTree = "<group>"; };
-		B3C58384290AF22700842069 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3C58384290AF22700842069 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		B3C58386290AF22800842069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C58389290AF22800842069 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,9 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				B3C58382290AF22700842069 /* HarvesterApp.swift */,
-				B3C58384290AF22700842069 /* ContentView.swift */,
+				B3C58384290AF22700842069 /* DemoView.swift */,
 				B3C58386290AF22800842069 /* Assets.xcassets */,
 				B3C58388290AF22800842069 /* Preview Content */,
+				B3BBD895292ACC02001E3F7F /* HVButton.swift */,
+				B3BBD897292ACE45001E3F7F /* ContentView.swift */,
 			);
 			path = Harvester;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C58385290AF22700842069 /* ContentView.swift in Sources */,
+				B3C58385290AF22700842069 /* DemoView.swift in Sources */,
 				B3C58383290AF22700842069 /* HarvesterApp.swift in Sources */,
+				B3BBD898292ACE45001E3F7F /* ContentView.swift in Sources */,
+				B3BBD896292ACC02001E3F7F /* HVButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
