@@ -54,6 +54,16 @@ class World : ObservableObject {
   
   @Published var gateValues = [OpGateValue]()
   
+  func updatePosition(forID id: UUID, position: CGPoint) {
+    let index = self.gates.firstIndex{$0.id == id    }
+    
+    guard let index else {
+      preconditionFailure()
+    }
+    
+    self.gates[index].offset = position
+  }
+  
   init () {
     let buttons = [HVButton(imageName: "007-cloud", color: .blue), HVButton(imageName: "017-fire", color: .orange)]
     self.buttons = buttons
@@ -68,6 +78,7 @@ class World : ObservableObject {
         ($0.id, $0.isOn)
       }
     }.map(Dictionary.init(uniqueKeysWithValues:))
+
     
     self.$gates.combineLatest(buttonValueDictionary).map { gates, values in
       return gates.map { gate in
@@ -126,7 +137,7 @@ struct ContentView: View {
       }
       
       ForEach(self.world.gateValues) { gate in
-        HVGateView(state:  self.world.bindingFor(keyPath: \.gateValues, withID: gate.id))
+        HVGateView(updatePosition: self.world.updatePosition(forID:position:), state:  self.world.bindingFor(keyPath: \.gateValues, withID: gate.id))
         }
     }
 }

@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct HVGateView: View {
+  let updatePosition : (UUID, CGPoint) -> Void
   @Binding var state : OpGateValue
   var simpleDrag: some Gesture {
     
       DragGesture()
           .onChanged { value in
-            self.state.gate.offset = value.location
+            updatePosition(self.state.id, value.location)
+            
           }
   }
     var body: some View {
@@ -35,7 +37,7 @@ struct ValueGateOperation : GateOperation {
 
 struct HVGateView_Previews: PreviewProvider {
     static var previews: some View {
-      HVGateView(state:
+      HVGateView(updatePosition: {_,_ in }, state:
           .constant(.init(gate: .init(id: .init(), sources: [], operation: ValueGateOperation(value: true), imageName: "008-coin", color: .red), value: true))
       )
     }
