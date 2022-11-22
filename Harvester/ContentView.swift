@@ -12,14 +12,29 @@ struct ContentView: View {
 
   
     var body: some View {
-      ForEach(self.world.buttons) { button in
-        let buttonBinding = self.world.bindingForButton(withID: button.id)
-              HVButtonView(state: buttonBinding)
-      }
-      
-      ForEach(self.world.gateValues) { gate in
-        HVGateView(updatePosition: self.world.updatePosition(forID:position:), state:  self.world.bindingFor(keyPath: \.gateValues, withID: gate.id))
+      NavigationView{
+        ZStack {
+          ForEach(self.world.buttons) { button in
+            HVButtonView(
+              state:
+                self.world.bindingFor(keyPath: \.buttons, withID: button.id)
+            )
+          }
+          ForEach(self.world.gateValues) { gate in
+            HVGateView(updatePosition: self.world.updatePosition(forID:position:), state:  self.world.bindingFor(keyPath: \.gateValues, withID: gate.id))
+          }
+        }.toolbar {
+          ToolbarItemGroup {
+            HStack{
+              Button {
+                
+              } label: {
+                Image(systemName: "plus")
+              }
+            }
+          }
         }
+      }
     }
 }
 
