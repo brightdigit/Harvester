@@ -14,6 +14,12 @@
 		B3C58385290AF22700842069 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C58384290AF22700842069 /* DemoView.swift */; };
 		B3C58387290AF22800842069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C58386290AF22800842069 /* Assets.xcassets */; };
 		B3C5838A290AF22800842069 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C58389290AF22800842069 /* Preview Assets.xcassets */; };
+		B3DCF18A292C5AAE00690A10 /* OpGateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DCF182292C5AAE00690A10 /* OpGateValue.swift */; };
+		B3DCF18B292C5AAE00690A10 /* AndGateOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DCF183292C5AAE00690A10 /* AndGateOp.swift */; };
+		B3DCF18D292C5AAE00690A10 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DCF185292C5AAE00690A10 /* Source.swift */; };
+		B3DCF18E292C5AAE00690A10 /* OpGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DCF186292C5AAE00690A10 /* OpGate.swift */; };
+		B3DCF18F292C5AAE00690A10 /* GateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DCF187292C5AAE00690A10 /* GateOperation.swift */; };
+		B3DCF190292C5AAE00690A10 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DCF188292C5AAE00690A10 /* World.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		B3C58384290AF22700842069 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		B3C58386290AF22800842069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C58389290AF22800842069 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3DCF182292C5AAE00690A10 /* OpGateValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpGateValue.swift; sourceTree = "<group>"; };
+		B3DCF183292C5AAE00690A10 /* AndGateOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndGateOp.swift; sourceTree = "<group>"; };
+		B3DCF185292C5AAE00690A10 /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		B3DCF186292C5AAE00690A10 /* OpGate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpGate.swift; sourceTree = "<group>"; };
+		B3DCF187292C5AAE00690A10 /* GateOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GateOperation.swift; sourceTree = "<group>"; };
+		B3DCF188292C5AAE00690A10 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,12 @@
 				B3C58386290AF22800842069 /* Assets.xcassets */,
 				B3C58388290AF22800842069 /* Preview Content */,
 				B3BBD895292ACC02001E3F7F /* HVButton.swift */,
+				B3DCF185292C5AAE00690A10 /* Source.swift */,
+				B3DCF187292C5AAE00690A10 /* GateOperation.swift */,
+				B3DCF183292C5AAE00690A10 /* AndGateOp.swift */,
+				B3DCF186292C5AAE00690A10 /* OpGate.swift */,
+				B3DCF182292C5AAE00690A10 /* OpGateValue.swift */,
+				B3DCF188292C5AAE00690A10 /* World.swift */,
 				B3BBD897292ACE45001E3F7F /* ContentView.swift */,
 				B31DA52D292B09B4000FD277 /* HVGateView.swift */,
 			);
@@ -148,6 +166,12 @@
 			files = (
 				B3C58385290AF22700842069 /* DemoView.swift in Sources */,
 				B3C58383290AF22700842069 /* HarvesterApp.swift in Sources */,
+				B3DCF18D292C5AAE00690A10 /* Source.swift in Sources */,
+				B3DCF190292C5AAE00690A10 /* World.swift in Sources */,
+				B3DCF18F292C5AAE00690A10 /* GateOperation.swift in Sources */,
+				B3DCF18E292C5AAE00690A10 /* OpGate.swift in Sources */,
+				B3DCF18B292C5AAE00690A10 /* AndGateOp.swift in Sources */,
+				B3DCF18A292C5AAE00690A10 /* OpGateValue.swift in Sources */,
 				B3BBD898292ACE45001E3F7F /* ContentView.swift in Sources */,
 				B31DA52E292B09B4000FD277 /* HVGateView.swift in Sources */,
 				B3BBD896292ACC02001E3F7F /* HVButton.swift in Sources */,

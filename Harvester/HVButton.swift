@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HVButton : Identifiable {
   let id : UUID = UUID()
+  var name : String = ""
   var isOn : Bool = false
   var offset : CGPoint = .init(x: 20, y: 20)
   var imageName : String
